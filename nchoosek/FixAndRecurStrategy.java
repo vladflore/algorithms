@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+/**
+ * Check https://www.baeldung.com/java-combinations-algorithm#selection-recursion
+ * 
+ */
 public class FixAndRecurStrategy implements NChooseK {
 
     private int count;
