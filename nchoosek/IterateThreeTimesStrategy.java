@@ -12,6 +12,9 @@ public class IterateThreeTimesStrategy implements NChooseK {
         for (int i = 0; i < elements.length - 2; i++) {
             for (int j = i + 1; j < elements.length - 1; j++) {
                 for (int m = j + 1; m < elements.length; m++) {
+
+                    // TODO duplicates are not handled
+
                     count++;
                     if (printCombination) {
                         System.out.println("[" + elements[i] + ", " + elements[j] + ", " + elements[m] + "]");

@@ -21,6 +21,8 @@ public class FixAndRecurStrategy implements NChooseK {
             return;
         }
 
+        // TODO duplicates are not handled
+
         for (int i = indexStart; i <= indexEnd && indexEnd - i + 1 >= k - currCombPos; i++) {
             currentCombination[currCombPos] = elements[i];
             generate(elements, i + 1, indexEnd, currentCombination, currCombPos + 1, k);
